@@ -4,6 +4,10 @@
   "description": "",
   "main": "dist/index.js",
   "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StanislavZab/asyncReducerManager.git"
+  },
   "scripts": {
     "prepublish": "npx tsc"
   },
