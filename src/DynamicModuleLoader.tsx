@@ -1,7 +1,7 @@
 import { Reducer } from '@reduxjs/toolkit';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { useReducerManager } from '../';
+import { useReducerManager } from '.';
 
 export type ReducersList<T> = {
     [name in keyof T]?: Reducer;
