@@ -8,7 +8,7 @@ export type ReducersList<T> = {
 }
 
 interface IProps<T> {
-    children: ReactNode;
+    children: JSX.Element;
     reducers: ReducersList<T>;
     removeAfterUnmount?: boolean;
 }
@@ -21,7 +21,7 @@ interface IProps<T> {
  * Не обязательный:
  * @removeAfterUnmount - булево значение, если true, то удалит элемент после отрисовки
  */
-export const DynamicModuleLoader = <T, >(props: IProps<T>) => {
+export const DynamicModuleLoader = <T, >(props: IProps<T>): JSX.Element => {
     const {
         children,
         reducers,
