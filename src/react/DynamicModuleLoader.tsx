@@ -1,7 +1,7 @@
 import { Reducer } from '@reduxjs/toolkit';
-import { ReactNode, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { useReducerManager } from '../hooks/useReducerManager';
+import { useReducerManager } from '../';
 
 export type ReducersList<T> = {
     [name in keyof T]?: Reducer;
@@ -13,14 +13,6 @@ interface IProps<T> {
     removeAfterUnmount?: boolean;
 }
 
-/**
- * Обертка которая добавляет редьюсеры
- * Принимает пропсы:
- * @children - чилдрен компонент
- * @reducers - редьюсеры, предаются обьектом
- * Не обязательный:
- * @removeAfterUnmount - булево значение, если true, то удалит элемент после отрисовки
- */
 export const DynamicModuleLoader = <T, >(props: IProps<T>): JSX.Element => {
     const {
         children,
