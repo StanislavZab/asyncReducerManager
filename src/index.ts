@@ -1,3 +1,4 @@
+export { DynamicModuleLoader } from './DynamicModuleLoader';
 import { CombinedState } from 'redux';
 import { useStore } from 'react-redux';
 import {
