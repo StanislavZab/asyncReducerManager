@@ -1,11 +1,11 @@
-The library is designed to help you create asynchronous reduxers for the Redux store.
+The library is designed to help you create asynchronous reduxers for the Redux store.<br>
 The library also contains a React component for easy addition and removal of editors.
 ***
 ***
 
-#####Example:
+###Example:
 
-```
+```ts
 import { CombinedState, configureStore, Reducer, ReducersMapObject } from '@reduxjs/toolkit';
 import { createReducerManager, ReduxStoreWithManager } from 'async-reducer-manager';
 
@@ -24,7 +24,8 @@ export function createReduxStore<StateSchema>(rootReducers: ReducersMapObject<St
 
 ```
 
-```
+```ts
+import { DynamicModuleLoader } from 'async-reducer-manager';
 interface IProps {
     Your propses...
 }
@@ -43,3 +44,6 @@ export const ComponentName = (props: IProps) => {
     );
 }
 ```
+
+`DynamicModuleLoader` accepts two parameters as passes:<br>
+* ___redusers___
