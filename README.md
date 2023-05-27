@@ -27,8 +27,9 @@ export function createReduxStore<StateSchema>(rootReducers: ReducersMapObject<St
 
 ```ts
 import { DynamicModuleLoader } from 'async-reducer-manager';
+
 interface IProps {
-    Your propses...
+    Your props...
 }
 
 const initialReducers: ReducersList<StateSchema> = {
