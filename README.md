@@ -49,6 +49,6 @@ export const ComponentName = (props: IProps) => {
 
 `DynamicModuleLoader` accepts two parameters as passes:<br>
 * ___redusers___ - list of reducers to add to the store.
-* ___removeAfterUnmount___ - flag indicating whether to leave the added reducers in the store after unmounting the component or delete (true - leave).
+* ___removeAfterUnmount___ - flag indicating whether to leave the added reducers in the store after unmounting the component or delete (true - delete).
 
 
