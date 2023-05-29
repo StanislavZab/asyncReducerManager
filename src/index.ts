@@ -1,4 +1,4 @@
-export { DynamicModuleLoader } from './DynamicModuleLoader';
+export { DynamicModuleLoader, ReducersList } from './DynamicModuleLoader';
 import { CombinedState } from 'redux';
 import { useStore } from 'react-redux';
 import {
